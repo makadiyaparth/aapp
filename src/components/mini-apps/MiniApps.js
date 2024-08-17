@@ -1,10 +1,10 @@
 import { Container, Typography, Box } from '@mui/material';
 
-function About() {
+function MiniApps() {
     return (
         <Container maxWidth="lg">
             <Typography variant="h3" component="h2" gutterBottom>
-                About
+                Mini Apps
             </Typography>
             <Box>
                 {/* Your home page content here */}
@@ -13,4 +13,4 @@ function About() {
     );
 }
 
-export default About;
+export default MiniApps;

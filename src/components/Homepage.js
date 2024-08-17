@@ -2,7 +2,7 @@ import { Container, Typography, Box } from '@mui/material';
 
 function Homepage() {
     return (
-        <Container maxWidth="md">
+        <Container maxWidth="lg">
             <Typography variant="h3" component="h2" gutterBottom>
                 Homepage
             </Typography>
