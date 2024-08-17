@@ -4,7 +4,7 @@ function Homepage() {
     return (
         <Container maxWidth="md">
             <Typography variant="h3" component="h2" gutterBottom>
-                Welcome to my Portfolio
+                Homepage
             </Typography>
             <Box>
                 {/* Your home page content here */}
