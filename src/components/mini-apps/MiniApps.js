@@ -2,14 +2,14 @@ import { Container, Typography, Box } from '@mui/material';
 
 function MiniApps() {
     return (
-        <Container maxWidth="lg">
-            <Typography variant="h3" component="h2" gutterBottom>
+        <>
+            <Typography variant="h4" component="h3" gutterBottom>
                 Mini Apps
             </Typography>
             <Box>
                 {/* Your home page content here */}
             </Box>
-        </Container>
+        </>
     );
 }
 
