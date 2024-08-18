@@ -10,6 +10,7 @@ function Header() {
                         Aapp
                     </Typography>
                     <Button component={RouterLink} sx={{ color: 'white' }} to="/">Home</Button>
+                    <Button component={RouterLink} sx={{ color: 'white' }} to="/dates">Dates</Button>
                     <Button component={RouterLink} sx={{ color: 'white' }} to="/mini-apps">Mini Apps</Button>
                     <Button component={RouterLink} sx={{ color: 'white' }} to="/about">About</Button>
                 </Toolbar>

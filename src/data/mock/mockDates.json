@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "date": "2021-07-22",
+        "expiryDate": "2030-01-01",
+        "note": "iPhone",
+        "tags": [
+            "phone",
+            "card",
+            "important"
+        ]
+    },
+    {
+        "id": 2,
+        "date": "2022-02-02",
+        "note": "Dining table",
+        "tags": [
+            "home",
+            "card"
+        ]
+    },
+    {
+        "id": 3,
+        "date": "2024-01-01",
+        "note": "Baby",
+        "tags": [
+            "birthday"
+        ]
+    },
+    {
+        "id": 4,
+        "date": "2024-01-01",
+        "note": "Baby"
+    }
+]
