@@ -1,4 +1,5 @@
 import { Chip, Paper, Stack, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@mui/material";
+import { formatDate, getYearTillToday } from "src/utils/dateUtils";
 
 function ListDates({ dates, tag }) {
     const getData = () => {
@@ -20,8 +21,9 @@ function ListDates({ dates, tag }) {
                     <TableHead>
                         <TableRow>
                             <TableCell>Date</TableCell>
-                            <TableCell>Expiry Date</TableCell>
                             <TableCell>Note</TableCell>
+                            <TableCell>Age</TableCell>
+                            <TableCell>Expiry Date</TableCell>
                             <TableCell>Tags</TableCell>
                         </TableRow>
                     </TableHead>
@@ -31,9 +33,10 @@ function ListDates({ dates, tag }) {
                                 key={row.id}
                                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                             >
-                                <TableCell>{row.date}</TableCell>
-                                <TableCell>{row.expiryDate}</TableCell>
+                                <TableCell>{formatDate(row.date)}</TableCell>
                                 <TableCell>{row.note}</TableCell>
+                                <TableCell>{getYearTillToday(row.date, row.expiryDate)}</TableCell>
+                                <TableCell>{formatDate(row.expiryDate)}</TableCell>
                                 <TableCell>
                                     <Stack direction="row" spacing={1}>
                                         {
