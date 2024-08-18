@@ -1,8 +1,14 @@
 import { Button, Card, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
 import { getImagePath } from "../../utils";
+import { OpenInNewSharp } from "@mui/icons-material";
 
 
 function MiniAppCard({ info }) {
+
+    const handleClick = () => {
+        window.open(info.url, '_blank', 'noopener,noreferrer');
+    }
+
     return (
         <>
             <Card>
@@ -21,7 +27,7 @@ function MiniAppCard({ info }) {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button size="small">Access</Button>
+                    <Button size="small" startIcon={<OpenInNewSharp />} onClick={handleClick}>Access</Button>
                 </CardActions>
             </Card>
         </>

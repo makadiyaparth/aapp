@@ -3,12 +3,14 @@
         "id": 1,
         "title": "Money Calculator",
         "description": "Calculate the total amount you having with multiple denomations of currency.",
-        "image": "money-calc.png"
+        "image": "money-calc.png",
+        "url": "https://makadiyaparth.github.io/pages/money-calc"
     },
     {
         "id": 2,
         "title": "Value Comparator",
         "description": "Helps to caluclate which size/variation of the product is best deal.",
-        "image": "value-comp.png"
+        "image": "value-comp.png",
+        "url": "https://makadiyaparth.github.io/pages/value-comparator"
     }
 ]

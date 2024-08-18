@@ -1,4 +1,4 @@
-import { Typography, Box, Grid, Card } from '@mui/material';
+import { Typography, Box, Grid } from '@mui/material';
 import data from '../../data/mini-apps.json';
 import MiniAppCard from './MiniAppCard';
 
