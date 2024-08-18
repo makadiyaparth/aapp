@@ -6,7 +6,9 @@ import { OpenInNewSharp } from "@mui/icons-material";
 function MiniAppCard({ info }) {
 
     const handleClick = () => {
-        window.open(info.url, '_blank', 'noopener,noreferrer');
+        if (info.url) {
+            window.open(info.url, '_blank', 'noopener,noreferrer');
+        }
     }
 
     return (

@@ -12,5 +12,12 @@
         "description": "Helps to caluclate which size/variation of the product is best deal.",
         "image": "value-comp.png",
         "url": "https://makadiyaparth.github.io/pages/value-comparator"
+    },
+    {
+        "id": 3,
+        "title": "Scorecard",
+        "description": "Helps to keep track of the points earned by players in round and point based games.",
+        "image": "scorecard.png",
+        "url": "https://makadiyaparth.github.io/pages/scorecard"
     }
 ]
