@@ -1,4 +1,6 @@
-import { Container, Typography, Box } from '@mui/material';
+import { Typography, Box, Grid, Card } from '@mui/material';
+import data from '../../data/mini-apps.json';
+import MiniAppCard from './MiniAppCard';
 
 function MiniApps() {
     return (
@@ -7,7 +9,15 @@ function MiniApps() {
                 Mini Apps
             </Typography>
             <Box>
-                {/* Your home page content here */}
+                <Grid container spacing={2}>
+                    {
+                        data.map(miniAppDetail => (
+                            <Grid item xs={12} sm={6} md={4} lg={3} key={miniAppDetail.id} >
+                                <MiniAppCard info={miniAppDetail}></MiniAppCard>
+                            </Grid>
+                        ))
+                    }
+                </Grid>
             </Box>
         </>
     );
