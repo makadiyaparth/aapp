@@ -1,0 +1,138 @@
+{
+    "aboutMe": "Passionate full stack engineer with 5+ years of experience in creating RESTful APIs using Spring Boot & UIs using Angular/React. Focusing on best practices and smallest details is my forte. Constantly learning new things to increase my knowledge and implementing them to improve the project I am working on.",
+    "skills": [
+        {
+            "skill": "Spring Boot",
+            "rating": 3.5,
+            "feature": true
+        },
+        {
+            "skill": "Microservice",
+            "rating": 3.5,
+            "feature": true
+        },
+        {
+            "skill": "Angular",
+            "rating": 3.5,
+            "feature": true
+        },
+        {
+            "skill": "React",
+            "rating": 3,
+            "feature": false
+        },
+        {
+            "skill": "SQL",
+            "rating": 3.5,
+            "feature": true
+        },
+        {
+            "skill": "Adobe XD",
+            "rating": 3.5,
+            "feature": false
+        },
+        {
+            "skill": "Python",
+            "rating": 3.5,
+            "feature": true
+        },
+        {
+            "skill": "JavaScript",
+            "rating": 4,
+            "feature": true
+        },
+        {
+            "skill": "NodeJS",
+            "rating": 3,
+            "feature": false
+        }
+    ],
+    "experience": [
+        {
+            "fromDate": "2022-10-03",
+            "toDate": "",
+            "role": "Software Engineer",
+            "company": "Autodesk India Pvt. Ltd., Pune",
+            "points": [
+                "Developing an application for L1/L2 support teams using Spring Boot & ReactJS.",
+                "Resolving customer incidents through root cause fixes.",
+                "Fixing security issues in application.",
+                "Working with tools and technologies like Splunk, Graphana, Jenkins, Spinnaker, etc."
+            ]
+        },
+        {
+            "fromDate": "2022-07-13",
+            "toDate": "2022-10-02",
+            "role": "Full Stack Engineer",
+            "company": "Neptune Ubicom Pvt. Ltd., Pune",
+            "points": [
+                "Successfully reduced the frequency of bugs in production by increasing the code coverage by writing unit tests for old and new features.",
+                "Created custom reusable components in Angular which reduced code duplication significantly and less error prone.",
+                "Improved the consistency of UI elements across the project which improved the usability of the product.",
+                "Making sure that only quality code gets to production through peer code reviews."
+            ]
+        },
+        {
+            "fromDate": "2020-06-05",
+            "toDate": "2022-07-12",
+            "role": "Java Developer",
+            "company": "Neptune Ubicom Pvt. Ltd., Pune",
+            "points": [
+                "Implemented best practices and features provided by Spring Boot to make the code more readable and easy to modify.",
+                "Writing testable backend services to easily test the features and reduce error rate.",
+                "Contributed towards documentation of the product features to reduce the dependency of any feature on a specific module owner."
+            ]
+        },
+        {
+            "fromDate": "2019-06-03",
+            "toDate": "2020-06-03",
+            "role": "Graduate Trainee",
+            "company": "Paul Mason Consulting India Pvt. Ltd., Vadodara",
+            "points": [
+                "Single-handedly maintained an internal ticketing system used by support team.",
+                "Self taught Spring boot and Angular.",
+                "Started working as an Angular developer for a flagship product.",
+                "Worked with NodeJS and Angular."
+            ]
+        },
+        {
+            "fromDate": "",
+            "toDate": "",
+            "role": "Spring Framework Session",
+            "company": "Babaria Institute of Technology, Vadodara",
+            "points": [
+                "Delivered an overview and hands-on session of Spring Framework. Idea was to make the audience familiar with Spring Framework and this advantages."
+            ]
+        },
+        {
+            "fromDate": "2018-06-17",
+            "toDate": "2019-04-30",
+            "role": "Project Trainee",
+            "company": "Paul Mason Consulting India Pvt. Ltd., Vadodara",
+            "points": [
+                "Worked on live projects for 8 months. Hands-on Struts, Spring Framework, Hibernate, JSP, MySQL."
+            ]
+        }
+    ],
+    "education": [
+        {
+            "fromYear": "2015",
+            "toYear": "2019",
+            "course": "B.E. in Computer Engineering",
+            "institute": "Babaria Institute of Technology, Vadodara"
+        },
+        {
+            "fromYear": "2014",
+            "toYear": "2015",
+            "course": "Higher School Certificate",
+            "institute": "P. P. Savani Chaitanya Vidya Sankul, Surat"
+        },
+        {
+            "fromYear": "2012",
+            "toYear": "2013",
+            "course": "Secondary School Certificate",
+            "institute": "P. P. Savani Chaitanya Vidya Sankul, Surat"
+        }
+    ],
+    "contact": []
+}
