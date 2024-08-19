@@ -1,5 +1,5 @@
 import { Chip, Paper, Stack, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@mui/material";
-import { formatDate, getYearTillToday } from "src/utils/dateUtils";
+import { formatDate, getYearTillToday } from "../../utils";
 
 function ListDates({ dates, tag }) {
     const getData = () => {
