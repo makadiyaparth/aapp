@@ -4,47 +4,128 @@
         {
             "skill": "Spring Boot",
             "rating": 3.5,
-            "feature": true
+            "feature": true,
+            "category": "Backend"
         },
         {
             "skill": "Microservice",
             "rating": 3.5,
-            "feature": true
-        },
-        {
-            "skill": "Angular",
-            "rating": 3.5,
-            "feature": true
-        },
-        {
-            "skill": "React",
-            "rating": 3,
-            "feature": false
-        },
-        {
-            "skill": "SQL",
-            "rating": 3.5,
-            "feature": true
-        },
-        {
-            "skill": "Adobe XD",
-            "rating": 3.5,
-            "feature": false
-        },
-        {
-            "skill": "Python",
-            "rating": 3.5,
-            "feature": true
-        },
-        {
-            "skill": "JavaScript",
-            "rating": 4,
-            "feature": true
+            "feature": true,
+            "category": "Backend"
         },
         {
             "skill": "NodeJS",
             "rating": 3,
-            "feature": false
+            "feature": false,
+            "category": "Backend"
+        },
+        {
+            "skill": "Spring Boot",
+            "rating": 3.5,
+            "feature": false,
+            "category": "Backend"
+        },
+        {
+            "skill": "Hibernate",
+            "rating": 4,
+            "feature": false,
+            "category": "Backend"
+        },
+        {
+            "skill": "Angular",
+            "rating": 3.5,
+            "feature": true,
+            "category": "Frontend"
+        },
+        {
+            "skill": "React",
+            "rating": 3,
+            "feature": false,
+            "category": "Frontend"
+        },
+        {
+            "skill": "Tailwind CSS",
+            "rating": 3.5,
+            "feature": false,
+            "category": "Frontend"
+        },
+        {
+            "skill": "Sass",
+            "rating": 3.5,
+            "feature": false,
+            "category": "Frontend"
+        },
+        {
+            "skill": "SQL",
+            "rating": 3.5,
+            "feature": true,
+            "category": "Database"
+        },
+        {
+            "skill": "NoSQL",
+            "rating": 3.5,
+            "feature": true,
+            "category": "Database"
+        },
+        {
+            "skill": "MySQL",
+            "rating": 3.5,
+            "feature": false,
+            "category": "Database"
+        },
+        {
+            "skill": "MongoDb",
+            "rating": 3,
+            "feature": false,
+            "category": "Database"
+        },
+        {
+            "skill": "Adobe XD",
+            "rating": 3.5,
+            "feature": false,
+            "category": "UI/UX"
+        },
+        {
+            "skill": "Figma",
+            "rating": 3,
+            "feature": false,
+            "category": "UI/UX"
+        },
+        {
+            "skill": "Java",
+            "rating": 4.5,
+            "feature": false,
+            "category": "Language"
+        },
+        {
+            "skill": "Python",
+            "rating": 3.5,
+            "feature": false,
+            "category": "Language"
+        },
+        {
+            "skill": "JavaScript",
+            "rating": 4,
+            "feature": false,
+            "category": "Language"
+        },
+        {
+            "skill": "TypeScript",
+            "rating": 4,
+            "feature": false,
+            "category": "Language"
+        },
+        {
+            "skill": "AWS",
+            "rating": 2,
+            "feature": false,
+            "category": "Others"
+        },
+        {
+            "skill": "Git",
+            "rating": 4,
+            "feature": false,
+            "category": "Others"
         }
     ],
     "experience": [
