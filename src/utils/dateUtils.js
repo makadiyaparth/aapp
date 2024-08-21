@@ -10,6 +10,10 @@ export const getYearTillToday = (from, to) => {
 
 // Takes date string as input
 export const formatDate = (date) => {
+    if (date === 'Present') {
+        return;
+    }
+
     if (!date) {
         return '-'
     }
@@ -18,6 +22,24 @@ export const formatDate = (date) => {
         year: '2-digit',
         month: 'short',
         day: '2-digit'
+    };
+
+    const formatter = new Intl.DateTimeFormat('en-IN', options);
+    return formatter.format(new Date(date));
+}
+
+export const monthYear = (date) => {
+    if (date === 'Present') {
+        return date;
+    }
+
+    if (!date) {
+        return '-'
+    }
+
+    const options = {
+        year: '2-digit',
+        month: 'short'
     };
 
     const formatter = new Intl.DateTimeFormat('en-IN', options);

@@ -1,7 +1,7 @@
 import { Box, Card, CardContent, CardMedia, Divider, Grid, Link, List, ListItem, ListItemButton, ListItemIcon, ListItemText, ListSubheader, Rating, Typography } from '@mui/material';
-import { getImagePath } from "../utils";
+import { getImagePath, monthYear } from "../utils";
 import personalInfo from '../data/personal-info.json';
-import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator } from '@mui/lab';
+import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, timelineOppositeContentClasses, TimelineSeparator } from '@mui/lab';
 import { Email, Phone, LinkedIn } from '@mui/icons-material';
 
 function About() {
@@ -16,6 +16,10 @@ function About() {
 
     const categories = () => {
         return ["Backend", "Frontend", "Database", "UI/UX", "Others"]
+    }
+
+    const experiences = () => {
+        return personalInfo['experience'] ?? [];
     }
 
     const educations = () => {
@@ -44,6 +48,53 @@ function About() {
                             <Typography variant="body2" color="text.secondary">
                                 {personalInfo.aboutMe}
                             </Typography>
+                        </CardContent>
+                    </Card>
+                    <Card sx={{ mt: 2 }}>
+                        <CardContent>
+                            <Typography gutterBottom variant="h4" component="div">
+                                Experiences
+                            </Typography>
+                            <Timeline
+                                sx={{
+                                    [`& .${timelineOppositeContentClasses.root}`]: {
+                                        flex: 0.4,
+                                    },
+                                }}
+                            >
+                                {
+                                    experiences().map((experience, index) => (
+                                        <TimelineItem key={index}>
+                                            <TimelineOppositeContent sx={{ py: '6px', px: 2 }} variant='body2' color="textSecondary">
+                                                <Typography variant="h6" component="span">
+                                                    {experience.role}
+                                                </Typography>
+                                                <Typography sx={{ color: 'grey' }}>
+                                                    {monthYear(experience.fromDate) + ' - ' + monthYear(experience.toDate)}
+                                                </Typography>
+                                            </TimelineOppositeContent>
+                                            <TimelineSeparator>
+                                                <TimelineDot color='primary' />
+                                                <TimelineConnector />
+                                            </TimelineSeparator>
+                                            <TimelineContent>
+                                                <Typography variant="h6" component="span">
+                                                    {experience.company}
+                                                </Typography>
+                                                <Box sx={{ color: 'grey' }}>
+                                                    <ul>
+                                                        {
+                                                            experience.points.map((point, idx) => (
+                                                                <li key={idx}>{point}</li>
+                                                            ))
+                                                        }
+                                                    </ul>
+                                                </Box>
+                                            </TimelineContent>
+                                        </TimelineItem>
+                                    ))
+                                }
+                            </Timeline>
                         </CardContent>
                     </Card>
                     <Card sx={{ mt: 2 }}>
