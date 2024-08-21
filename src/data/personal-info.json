@@ -215,5 +215,21 @@
             "institute": "P. P. Savani Chaitanya Vidya Sankul, Surat"
         }
     ],
-    "contact": []
+    "contact": [
+        {
+            "type": "LinkedIn",
+            "link": "https://www.linkedin.com/in/parth-makadiya-4065a915a/",
+            "info": "Parth Makadiya"
+        },
+        {
+            "type": "Email",
+            "link": "mailto:makadiyaparth98@gmail.com",
+            "info": "makadiyaparth98@gmail.com"
+        },
+        {
+            "type": "Call",
+            "link": "tel:+916352935259",
+            "info": "+91 63529 35259"
+        }
+    ]
 }

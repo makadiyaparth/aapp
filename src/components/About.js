@@ -1,7 +1,8 @@
-import { Box, Card, CardContent, CardMedia, Divider, Grid, List, ListItem, ListSubheader, Rating, Typography } from '@mui/material';
+import { Box, Card, CardContent, CardMedia, Divider, Grid, Link, List, ListItem, ListItemButton, ListItemIcon, ListItemText, ListSubheader, Rating, Typography } from '@mui/material';
 import { getImagePath } from "../utils";
 import personalInfo from '../data/personal-info.json';
 import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator } from '@mui/lab';
+import { Email, Phone, LinkedIn } from '@mui/icons-material';
 
 function About() {
 
@@ -19,6 +20,10 @@ function About() {
 
     const educations = () => {
         return personalInfo['education'] ?? [];
+    }
+
+    const contacts = () => {
+        return personalInfo['contact'] ?? [];
     }
 
     return (
@@ -49,7 +54,7 @@ function About() {
                             <Timeline position='alternate'>
                                 {
                                     educations().map((education, index) => (
-                                        <TimelineItem>
+                                        <TimelineItem key={index}>
                                             <TimelineOppositeContent
                                                 sx={{ m: 'auto 0' }}
                                                 align="right"
@@ -60,7 +65,7 @@ function About() {
                                             </TimelineOppositeContent>
                                             <TimelineSeparator>
                                                 <TimelineConnector />
-                                                <TimelineDot>
+                                                <TimelineDot color='primary'>
                                                 </TimelineDot>
                                                 <TimelineConnector />
                                             </TimelineSeparator>
@@ -68,7 +73,7 @@ function About() {
                                                 <Typography variant="h6" component="span">
                                                     {education.course}
                                                 </Typography>
-                                                <Typography>
+                                                <Typography sx={{ color: 'grey' }}>
                                                     {education.institute}
                                                 </Typography>
                                             </TimelineContent>
@@ -81,6 +86,33 @@ function About() {
                 </Grid>
                 <Grid item xs={12} md={4}>
                     <Card>
+                        <CardContent>
+                            <Typography gutterBottom variant="h4" component="div">
+                                Let's connect over
+                            </Typography>
+                            <List>
+                                {
+                                    contacts().map((contact, index) => (
+                                        <ListItem key={index} disablePadding>
+                                            <ListItemButton>
+                                                <ListItemIcon>
+                                                    {contact.type === 'LinkedIn' && <LinkedIn fontSize='large' sx={{ color: 'blue' }} />}
+                                                    {contact.type === 'Email' && <Email fontSize='large' sx={{ color: 'red' }} />}
+                                                    {contact.type === 'Call' && <Phone fontSize='large' sx={{ color: 'black' }} />}
+                                                </ListItemIcon>
+                                                <ListItemText primary={
+                                                    <Link href={contact.link} color='inherit' underline="hover">
+                                                        {contact.info}
+                                                    </Link>
+                                                } />
+                                            </ListItemButton>
+                                        </ListItem>
+                                    ))
+                                }
+                            </List>
+                        </CardContent>
+                    </Card>
+                    <Card sx={{ mt: 2 }}>
                         <CardContent>
                             <Typography gutterBottom variant="h4" component="div">
                                 Skills
@@ -99,12 +131,12 @@ function About() {
                             {
                                 categories().map((category, index) => (
                                     <>
-                                        <Divider />
+                                        <Divider key={`divider-${index}`} />
                                         <List key={index}
                                             subheader={<ListSubheader>{category}</ListSubheader>}>
                                             {
-                                                skillsOfCategory(category).map((skill, index) => (
-                                                    <ListItem key={index} sx={{ justifyContent: 'space-between' }}>
+                                                skillsOfCategory(category).map((skill, idx) => (
+                                                    <ListItem key={idx} sx={{ justifyContent: 'space-between' }}>
                                                         <Box>{skill.skill}</Box>
                                                     </ListItem>
                                                 ))
