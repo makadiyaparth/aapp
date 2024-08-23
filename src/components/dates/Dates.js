@@ -28,7 +28,7 @@ function Dates() {
 
     return (
         <>
-            <Typography variant="h4" component="h3" gutterBottom>
+            <Typography variant="h6" component="h3" gutterBottom>
                 Dates (with mock data)
             </Typography>
 

@@ -32,6 +32,12 @@
             "category": "Backend"
         },
         {
+            "skill": "ExpressJS",
+            "rating": 4,
+            "feature": false,
+            "category": "Backend"
+        },
+        {
             "skill": "Angular",
             "rating": 3.5,
             "feature": true,
@@ -40,6 +46,12 @@
         {
             "skill": "React",
             "rating": 3,
+            "feature": false,
+            "category": "Frontend"
+        },
+        {
+            "skill": "Material UI",
+            "rating": 3.5,
             "feature": false,
             "category": "Frontend"
         },

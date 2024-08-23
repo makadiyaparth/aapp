@@ -42,17 +42,17 @@ function About() {
                             alt="Profile photo"
                         />
                         <CardContent>
-                            <Typography gutterBottom variant="h3" component="div">
+                            <Typography gutterBottom variant="h4" component="div">
                                 Parth Makadiya
                             </Typography>
-                            <Typography variant="body2" color="text.secondary">
+                            <Typography variant="body1" color="text.secondary">
                                 {personalInfo.aboutMe}
                             </Typography>
                         </CardContent>
                     </Card>
                     <Card sx={{ mt: 2 }}>
                         <CardContent>
-                            <Typography gutterBottom variant="h4" component="div">
+                            <Typography gutterBottom variant="h5" component="div">
                                 Experiences
                             </Typography>
                             <Timeline
@@ -65,11 +65,11 @@ function About() {
                                 {
                                     experiences().map((experience, index) => (
                                         <TimelineItem key={index}>
-                                            <TimelineOppositeContent sx={{ py: '6px', px: 2 }} variant='body2' color="textSecondary">
-                                                <Typography variant="h6" component="span">
+                                            <TimelineOppositeContent sx={{ py: '6px', px: 2 }} variant='subtitle2' color="textSecondary">
+                                                <Typography variant="body1" component="span">
                                                     {experience.role}
                                                 </Typography>
-                                                <Typography sx={{ color: 'grey' }}>
+                                                <Typography variant='body2' sx={{ color: 'grey' }}>
                                                     {monthYear(experience.fromDate) + ' - ' + monthYear(experience.toDate)}
                                                 </Typography>
                                             </TimelineOppositeContent>
@@ -78,14 +78,18 @@ function About() {
                                                 <TimelineConnector />
                                             </TimelineSeparator>
                                             <TimelineContent>
-                                                <Typography variant="h6" component="span">
+                                                <Typography variant="body1" component="span">
                                                     {experience.company}
                                                 </Typography>
                                                 <Box sx={{ color: 'grey' }}>
                                                     <ul>
                                                         {
                                                             experience.points.map((point, idx) => (
-                                                                <li key={idx}>{point}</li>
+                                                                <li key={idx}>
+                                                                    <Typography variant='body2'>
+                                                                        {point}
+                                                                    </Typography>
+                                                                </li>
                                                             ))
                                                         }
                                                     </ul>
@@ -99,7 +103,7 @@ function About() {
                     </Card>
                     <Card sx={{ mt: 2 }}>
                         <CardContent>
-                            <Typography gutterBottom variant="h4" component="div">
+                            <Typography gutterBottom variant="h5" component="div">
                                 Education
                             </Typography>
                             <Timeline position='alternate'>
@@ -121,10 +125,10 @@ function About() {
                                                 <TimelineConnector />
                                             </TimelineSeparator>
                                             <TimelineContent sx={{ py: '12px', px: 2 }}>
-                                                <Typography variant="h6" component="span">
+                                                <Typography variant="body1" component="span">
                                                     {education.course}
                                                 </Typography>
-                                                <Typography sx={{ color: 'grey' }}>
+                                                <Typography variant='subtitle2' sx={{ color: 'grey' }}>
                                                     {education.institute}
                                                 </Typography>
                                             </TimelineContent>
@@ -138,7 +142,7 @@ function About() {
                 <Grid item xs={12} md={4}>
                     <Card>
                         <CardContent>
-                            <Typography gutterBottom variant="h4" component="div">
+                            <Typography gutterBottom variant="h5" component="div">
                                 Let's connect over
                             </Typography>
                             <List>
@@ -165,7 +169,7 @@ function About() {
                     </Card>
                     <Card sx={{ mt: 2 }}>
                         <CardContent>
-                            <Typography gutterBottom variant="h4" component="div">
+                            <Typography gutterBottom variant="h5" component="div">
                                 Skills
                             </Typography>
                             <List

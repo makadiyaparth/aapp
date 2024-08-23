@@ -21,7 +21,7 @@ function MiniAppCard({ info }) {
                     alt={info.title}
                 />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
+                    <Typography gutterBottom variant="subtitle1" component="div">
                         {info.title}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
